@@ -1,0 +1,18 @@
+﻿@model Otomasyon.Models.Siniflar.Kategori
+@{
+    ViewBag.Title = "KategoriEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Kategori Ekle</h2>
+
+<form class="form-group" method="post">
+    <a>Kategori Adı Girin</a>
+    <br />
+    @Html.TextBoxFor(x=>x.KategoriAd)
+  
+    <br />
+    <button class="btn btn-info" style="margin-top:5px">Kaydet</button>
+</form>
+
+
